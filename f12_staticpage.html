@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City View</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+        }
+
+        .page {
+            height: 100vh;
+
+            background:
+                linear-gradient(rgba(0,40,50,.3), rgba(0,20,30,.5)),
+                url("https://images.unsplash.com/photo-1559511260-66a654ae982a?auto=format&fit=crop&w=2000&q=80");
+
+            background-size: cover;
+            background-position: center;
+        }
+        .box {
+            height: 115px;
+            width: 500px;
+            background: rgba(0,30,40,0.7);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .box1 {
+            position: absolute;
+
+            top: 40px;
+            left: 50%;
+
+            transform: translateX(-50%);
+        }
+
+        .bottom-boxes {
+            position: absolute;
+            left: 25px;
+            right: 25px;
+            bottom: 25px;
+
+            display: flex;
+            gap: 20px;
+        }
+
+        .bottom-boxes .box {
+            width: auto;
+            flex: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+        <div class="box box1">
+            Box 1
+        </div>
+        <div class="bottom-boxes">
+            <div class="box">
+                Box 2
+            </div>
+            <div class="box">
+                Box 3
+            </div>
+            <div class="box">
+                Box 4
+            </div>
+        </div>
+    </div>
+</body>
+</html>
