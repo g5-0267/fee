@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            border: 2px solid white;
+            background-color: #111;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            height: 15%;
+            display: flex;
+        }
+
+        header div {
+            width: 50%;
+            border: 1px solid white;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        main {
+            height: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+            background-color: #111;
+        }
+
+        .box1,
+        .box2 {
+            width: 230px;
+            height: 145px;
+            background-color: #0000ff;
+            border: 2px solid white;
+        }
+
+        .box2 {
+            margin-left: -120px;
+            margin-top: 120px;
+        }
+
+        footer {
+            height: 15%;
+            display: flex;
+        }
+
+        footer div {
+            width: 50%;
+            border: 1px solid white;
+            padding: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div>Logo</div>
+        <div>Links</div>
+    </header>
+
+    <main>
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </main>
+
+    <footer>
+        <div>Footer 1</div>
+        <div>Footer 2</div>
+    </footer>
+
+</body>
+</html>

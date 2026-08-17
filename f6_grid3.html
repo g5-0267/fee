@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:Arial, sans-serif;
+    }
+
+    .container{
+      display:grid;
+      grid-template-columns: 25rem 25rem;  
+      grid-template-rows: 4.5rem 25rem 4rem;
+      height:100vh;
+      justify-content:center;               
+    }
+
+    .logo,
+    .links,
+    .main,
+    .footer1,
+    .footer2{
+      border:2px solid white;
+      background:black;
+      color:white;
+    }
+
+    .logo{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .links{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .main{
+      grid-column:1/3;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:2.5rem;
+    }
+
+    .box{
+      width:7.2rem;
+      height:7.2rem;
+      background:rgb(176, 166, 168);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:0.6rem;
+    }
+
+    .footer1,
+    .footer2{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="container">
+
+    <section class="logo">Logo</section>
+
+    <section class="links">Links</section>
+
+    <section class="main">
+      <section class="box">Small Square Box</section>
+      <section class="box">Small Square Box</section>
+    </section>
+
+    <section class="footer1">Footer1</section>
+
+    <section class="footer2">Footer2</section>
+
+  </section>
+
+</body>
+</html
