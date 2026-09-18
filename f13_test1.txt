@@ -1,0 +1,13 @@
+/*Q1.What do you know about functions?
+Ans:1.Function is a block of code.
+2.We define function using () brackets.
+3.We can reuse function.
+Q2.What is layout?
+Ans:Layout means how we make website its blueprint.Layout contain header,main,footer.
+Q3. what do you know about flex layout?
+Ans:1.flex layout mean we can assign main box as a flex which helps in adjusting child boxes inside it their positions.
+Q4.What is the need of grid layout?
+Ans:grid layout help us in adjusting child boxes using row and column and we also adjust mobile layout and laptop layout . 
+Q5.What is the use of Github.
+Ans:Github is used in storing file in it if we want to make changes in original file the original file is remained unchanged in github.
+Our code file can be see my other students if we want.*/
